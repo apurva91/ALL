@@ -28,11 +28,11 @@
       return stringOut;
   };
 
-  var idarr = ['input-files','pass1','pass2','linker','simulator'];
+/*  var idarr = ['input-files','pass1','pass2','linker','simulator'];
   	for(i=0;i<idarr.length;i++)
   	{
   			$('#'+idarr[i]).hide();
-  	}
+  	}*/
   $('#submit-button').click(function(){
       files = $('input[type=file]')[0].files;
       fileNames = []
@@ -55,12 +55,12 @@
               tabs = "";
               tabs += '<div class="row" style="padding-top:10%;"><div class="col s12" tab-indicator-black><ul class="tabs tabs-fixed-width ">';
               for(i=0;i<fileNames.length;i++){
-                tabs += ' <li class="tab col"><a class="brown lighten-3 brown-text text-darken-4" href="#filetab'+i+'">'+fileNames[i]+'</a></li>';
+                tabs += ' <li class="tab col"><a class="indigo lighten-3 indigo-text text-darken-4" href="#filetab'+i+'">'+fileNames[i]+'</a></li>';
               }
               tabs += '</ul></div>';
               for(i=0;i<fileNames.length;i++){               
                 tabs += '<div id="filetab'+i+'" class="col s12">';
-                tabs+= '<div class="col s4 offset-s4 card-panel brown lighten-4 hoverable black-text" >'+response['filedata'][fileNames[i]].replace(/\n/g,"<br>")+'</div>';
+                tabs+= '<div class="col s4 offset-s4 card-panel indigo lighten-4 hoverable black-text" >'+response['filedata'][fileNames[i]].replace(/\n/g,"<br>")+'</div>';
                 tabs+='</div>';
               }
               tabs += '</div>';
@@ -70,18 +70,18 @@
               tabs = "";
               tabs += '<div class="row" ><div class="col s12"><ul class="tabs tabs-fixed-width">';
               for(i=0;i<fileNames.length;i++){
-                tabs += ' <li class="tab col"><a class="brown lighten-3 brown-text text-darken-4" href="#pass1tab'+i+'">'+fileNames[i]+'</a></li>';
+                tabs += ' <li class="tab col"><a class="indigo lighten-3 indigo-text text-darken-4" href="#pass1tab'+i+'">'+fileNames[i]+'</a></li>';
               }                    
 
               tabs += '</ul></div>';
               for(i=0;i<fileNames.length;i++){
                 var tempname = fileNames[i].split('.')[0];
                 tabs += '<div id="pass1tab'+i+'" class="col s12">';
-                tabs+= '<div class="col s4 offset-s2 card-panel brown lighten-4 hoverable black-text" >'+response['pass1'][fileNames[i].split('.')[0]].replace(/\n/g,"<br>")+'</div>';
+                tabs+= '<div class="col s4 offset-s2 card-panel indigo lighten-4 hoverable black-text" >'+response['pass1'][fileNames[i].split('.')[0]].replace(/\n/g,"<br>")+'</div>';
                 tabs+= '<div id="tables" class="row col s4" style="display:block">';
-                tabs+='<div class="col s12 card-panel brown lighten-4 hoverable black-text" > Symbols Table<br>'+printDic(response['symTable'][tempname])+'</div>';
-                tabs+='<div class="col s12 card-panel brown lighten-4 hoverable black-text" > Literals Table<br>'+printRealDic(response['litTable'][tempname])+'</div>';
-                tabs+='<div class="col s12 card-panel brown lighten-4 hoverable black-text" > Global Table<br>'+printDic(response['globTable'][tempname])+'</div>';
+                tabs+='<div class="col s12 card-panel indigo lighten-4 hoverable black-text" > Symbols Table<br>'+printDic(response['symTable'][tempname])+'</div>';
+                tabs+='<div class="col s12 card-panel indigo lighten-4 hoverable black-text" > Literals Table<br>'+printRealDic(response['litTable'][tempname])+'</div>';
+                tabs+='<div class="col s12 card-panel indigo lighten-4 hoverable black-text" > Global Table<br>'+printDic(response['globTable'][tempname])+'</div>';
                 tabs+= '</div>';
                 tabs+='</div>';
               }
@@ -90,18 +90,18 @@
               tabs = "";
               tabs += '<div class="row"><div class="col s12"><ul class="tabs tabs-fixed-width">';
               for(i=0;i<fileNames.length;i++){
-                tabs += ' <li class="tab col"><a class="brown lighten-3 brown-text text-darken-4" href="#pass2tab'+i+'">'+fileNames[i]+'</a></li>';
+                tabs += ' <li class="tab col"><a class="indigo lighten-3 indigo-text text-darken-4" href="#pass2tab'+i+'">'+fileNames[i]+'</a></li>';
               }                    
 
               tabs += '</ul></div>';
               for(i=0;i<fileNames.length;i++){
                 var tempname = fileNames[i].split('.')[0];
                 tabs += '<div id="pass2tab'+i+'" class="col s12">';
-                tabs+= '<div class="col s4 offset-s2 card-panel brown lighten-4 hoverable black-text " >'+response['pass2'][fileNames[i].split('.')[0]].replace(/\n/g,"<br>")+'</div>';
+                tabs+= '<div class="col s4 offset-s2 card-panel indigo lighten-4 hoverable black-text " >'+response['pass2'][fileNames[i].split('.')[0]].replace(/\n/g,"<br>")+'</div>';
                 tabs+= '<div id="tables" class="row col s4" style="display:block">';
-                tabs+='<div class="col s12 card-panel teal  brown lighten-4 hoverable black-text" > Symbols Table<br>'+printDic(response['symTable'][tempname])+'</div>';
-                tabs+='<div class="col s12 card-panel teal  brown lighten-4 hoverable black-text" > Literals Table<br>'+printRealDic(response['litTable'][tempname])+'</div>';
-                tabs+='<div class="col s12 card-panel teal  brown lighten-4 hoverable black-text" > Global Table<br>'+printDic(response['globTable'][tempname])+'</div>';
+                tabs+='<div class="col s12 card-panel teal  indigo lighten-4 hoverable black-text" > Symbols Table<br>'+printDic(response['symTable'][tempname])+'</div>';
+                tabs+='<div class="col s12 card-panel teal  indigo lighten-4 hoverable black-text" > Literals Table<br>'+printRealDic(response['litTable'][tempname])+'</div>';
+                tabs+='<div class="col s12 card-panel teal  indigo lighten-4 hoverable black-text" > Global Table<br>'+printDic(response['globTable'][tempname])+'</div>';
                 tabs+= '</div>';
                 tabs+='</div>';
               }
@@ -161,16 +161,16 @@
     });
   });
 
-  $('.side-btn').click(function(){
-  	var addressValue = $(this).attr("plink");
-  	// alert(addressValue);
-  	var idarr = ['input-files','pass1','pass2','linker','simulator','titleBox'];
-  	for(i=0;i<idarr.length;i++)
-  	{
-  		if(idarr[i]!=addressValue)
-  			$('#'+idarr[i]).hide();
-  		else
-  			$('#'+idarr[i]).show();
-  	}
-  });
+  // $('.side-btn').click(function(){
+  // 	var addressValue = $(this).attr("plink");
+  // 	// alert(addressValue);
+  // 	var idarr = ['input-files','pass1','pass2','linker','simulator','titleBox'];
+  // 	for(i=0;i<idarr.length;i++)
+  // 	{
+  // 		if(idarr[i]!=addressValue)
+  // 			$('#'+idarr[i]).hide();
+  // 		else
+  // 			$('#'+idarr[i]).show();
+  // 	}
+  // });
 })(jQuery);
