@@ -99,9 +99,9 @@
                 tabs += '<div id="pass2tab'+i+'" class="col s12">';
                 tabs+= '<div class="col s4 offset-s2 card-panel indigo lighten-4 hoverable black-text " >'+response['pass2'][fileNames[i].split('.')[0]].replace(/\n/g,"<br>")+'</div>';
                 tabs+= '<div id="tables" class="row col s4" style="display:block">';
-                tabs+='<div class="col s12 card-panel teal  indigo lighten-4 hoverable black-text" > Symbols Table<br>'+printDic(response['symTable'][tempname])+'</div>';
-                tabs+='<div class="col s12 card-panel teal  indigo lighten-4 hoverable black-text" > Literals Table<br>'+printRealDic(response['litTable'][tempname])+'</div>';
-                tabs+='<div class="col s12 card-panel teal  indigo lighten-4 hoverable black-text" > Global Table<br>'+printDic(response['globTable'][tempname])+'</div>';
+                tabs+='<div class="col s12 card-panel   indigo lighten-4 hoverable black-text" > Symbols Table<br>'+printDic(response['symTable'][tempname])+'</div>';
+                tabs+='<div class="col s12 card-panel   indigo lighten-4 hoverable black-text" > Literals Table<br>'+printRealDic(response['litTable'][tempname])+'</div>';
+                tabs+='<div class="col s12 card-panel   indigo lighten-4 hoverable black-text" > Global Table<br>'+printDic(response['globTable'][tempname])+'</div>';
                 tabs+= '</div>';
                 tabs+='</div>';
               }

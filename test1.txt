@@ -1,14 +1,12 @@
-var c=0
-var d=0
-var e=0
-macro
-foo
-c = d + e
-mend
-macro
-incr c,&add,&bdd=1
-var add=5
-var bdd=10
-mend
-incr c,bdd=d,add=e
-foo
+var a = 3
+var b = 4
+var c = 0
+if a < 4
+	c = c + 2
+endif
+if b > 2
+	a = a + 1
+endif
+if a = b
+	c = c + 3
+endif

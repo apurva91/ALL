@@ -1,8 +1,11 @@
 macro
 foo
-var a=5
-var b=10
+c = a + b
+a = c + b
 mend
+var a = 6
+var b = 9
 var c=1
 foo
-c=a+b
+foo
+foo
