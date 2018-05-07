@@ -1,0 +1,22 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Terminologies used \046 their details}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Assembly Language}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Compiling Assembly Language}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Scanning and Parsing the code}{section.2}% 5
+\BOOKMARK [1][-]{section.3}{Assembler}{}% 6
+\BOOKMARK [2][-]{subsection.3.1}{What is an assembler?}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.2}{Data Structure}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.3}{Pass 1 Assembler}{section.3}% 9
+\BOOKMARK [2][-]{subsection.3.4}{Pass 2 Assembler}{section.3}% 10
+\BOOKMARK [2][-]{subsection.3.5}{Difference between Pass 1 and Pass 2 Assembler}{section.3}% 11
+\BOOKMARK [1][-]{section.4}{Linker}{}% 12
+\BOOKMARK [2][-]{subsection.4.1}{What is a Linker?}{section.4}% 13
+\BOOKMARK [2][-]{subsection.4.2}{Tasks of a Linker}{section.4}% 14
+\BOOKMARK [2][-]{subsection.4.3}{Linking Requirements}{section.4}% 15
+\BOOKMARK [2][-]{subsection.4.4}{Algorithm of a Linker}{section.4}% 16
+\BOOKMARK [2][-]{subsection.4.5}{Relocation}{section.4}% 17
+\BOOKMARK [1][-]{section.5}{Loader}{}% 18
+\BOOKMARK [2][-]{subsection.5.1}{What is a Loader?}{section.5}% 19
+\BOOKMARK [2][-]{subsection.5.2}{Execution of Loader}{section.5}% 20
+\BOOKMARK [2][-]{subsection.5.3}{Design of an absolute Loader}{section.5}% 21
+\BOOKMARK [1][-]{section.6}{Refrences}{}% 22
